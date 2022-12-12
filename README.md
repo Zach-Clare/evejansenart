@@ -4,11 +4,11 @@ This site has been created with [Craft CMS](https://craftcms.com) by [Helix Soft
 
 # Design
 
-The intention behind this site is to draw all attention and focus to the artwork, and then to get the user to somehow get into ontact with the artist. Therefore, the site must be clear and understated. Design elements must entice the user towards the artwork.
+The intention behind this site is to draw all attention and focus to the artwork, and then to get the user to somehow get into contact with the artist via a CTA. Therefore, the site must be clear and understated. Design elements must entice the user towards the artwork.
 
 ![FP-mobile2](https://user-images.githubusercontent.com/41343750/207098758-ec972345-63f8-4a9a-9e3b-c0e3d228a46f.jpg)
 
-The front page contains a single calls to action - to contact the artist. Since one of the the main goals of the site is to get the user to contact the artist, this button has been highlighted. This comparison can be seen with unimportant buttons on other parts of the site. The front page scrolls immediately into the artist's work so that there is minimal resistance between the first page load and the artwork. Users are able to filter the artwork they see, which removes barriers for returning users looking for a specific piece. 
+The front page scrolls immediately into the artist's work so that there is minimal resistance between the first page load and the artwork. Users are able to filter the artwork they see, which removes barriers for returning users looking for a specific piece. 
 
 Designing for mobile first, where screen space is tighter, forces me to prioritise and critically assess elements. Thus, when switching to designing for larger screens, the most important elements are obvious, and can be placed carefully. Of course, the layout will change - the burger menu is no longer necessary, and the artwork can span a larger horizontal area. Extra screen space allows less important UI elements, such as the search bar, to remain visible throughout scrolling the page.
 
