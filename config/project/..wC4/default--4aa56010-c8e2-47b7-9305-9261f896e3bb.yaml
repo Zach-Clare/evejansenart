@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: evejansenart.com
+primary: true
+siteGroup: d0b420d5-d44e-4f01-9965-d034498fde0f
+sortOrder: 1

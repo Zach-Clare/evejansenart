@@ -1,0 +1,20 @@
+columnSuffix: wrtvbxni
+contentColumnType: integer(10)
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: width
+instructions: 'Width in Centimetres'
+name: Width
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

@@ -1,0 +1,17 @@
+columnSuffix: svgejdqm
+contentColumnType: integer(10)
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: price
+instructions: 'How much does this item cost?'
+name: Price
+searchable: false
+settings:
+  currency: GBP
+  defaultValue: null
+  max: null
+  min: 0
+  showCurrency: true
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Money

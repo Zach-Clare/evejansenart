@@ -1,0 +1,19 @@
+columnSuffix: hbuxszop
+contentColumnType: text
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: media
+instructions: 'How was this piece created?'
+name: Media
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

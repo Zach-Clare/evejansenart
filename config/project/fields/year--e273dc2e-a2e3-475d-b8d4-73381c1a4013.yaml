@@ -1,0 +1,17 @@
+columnSuffix: rxeeunbw
+contentColumnType: datetime
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: year
+instructions: 'When was this piece created?'
+name: Year
+searchable: true
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

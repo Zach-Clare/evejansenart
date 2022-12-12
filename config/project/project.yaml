@@ -1,0 +1,44 @@
+dateModified: 1670858655
+email:
+  fromEmail: zach@helixsoftware.uk
+  fromName: evejansenart.com
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  photos:
+    hasUrls: true
+    name: photos
+    settings:
+      path: assets/photos
+    type: craft\fs\Local
+    url: /photos
+meta:
+  __names__:
+    1ab72e18-746d-4c84-b11d-76859fe6e851: Common # Common
+    1e5d6668-ca31-4a05-bcf4-476ae2d45654: Price # Price
+    2d9a9103-cccf-47c2-a903-d7cf2e29ec38: Width # Width
+    3e4dd4c5-e025-4f58-b3be-1bc407758ca2: Media # Media
+    4aa56010-c8e2-47b7-9305-9261f896e3bb: dev.evejansenart.com # dev.evejansenart.com
+    4f5a0094-e716-4456-bd4d-c44226bba9b4: Piece # Piece
+    8b80aeea-d283-471c-bca8-5c5665346850: Piece # Piece
+    65f8b98a-d97f-423a-bdf1-1bb2b4f081e7: Pirority # Pirority
+    661c5cb9-bd8c-4a36-b601-bbe11cae36c4: photos # photos
+    840c983d-29fd-46f7-8c77-5f2f194f9b5d: Piece # Piece
+    8488cabf-0a37-42b3-a644-f5437e8c7c21: Default # Default
+    41889491-3469-4116-9d5f-11df403d82a9: Photo # Photo
+    bf0e7770-eecf-40cd-9fbf-77bd158c1b38: Height # Height
+    cc98bc8a-dd0f-4d50-9377-66c1567ae625: Edition # Edition
+    d0b420d5-d44e-4f01-9965-d034498fde0f: evejansenart.com # evejansenart.com
+    e273dc2e-a2e3-475d-b8d4-73381c1a4013: Year # Year
+system:
+  edition: solo
+  live: true
+  name: dev.evejansenart.com
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: piece
+name: Piece
+propagationMethod: all
+siteSettings:
+  4aa56010-c8e2-47b7-9305-9261f896e3bb: # dev.evejansenart.com
+    enabledByDefault: true
+    hasUrls: true
+    template: piece/_entry
+    uriFormat: 'piece/{slug}'
+type: channel
