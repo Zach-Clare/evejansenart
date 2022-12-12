@@ -1,6 +1,6 @@
 # Eve Jansen Art
 
-This site has been created with (Craft CMS)[https://craftcms.com] by (Helix Software)[http://helixsoftware.uk].
+This site has been created with [Craft CMS](https://craftcms.com) by [Helix Software](http://helixsoftware.uk).
 
 # Design
 
