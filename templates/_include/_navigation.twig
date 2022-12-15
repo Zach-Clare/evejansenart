@@ -1,0 +1,30 @@
+<script src="/js/nav.js"></script>
+
+{% set firstSegment = craft.app.request.getSegment(1) %}
+
+<nav class="container-fluid d-flex justify-content-between d-md-none top-mobile-nav">
+    <div class="col-9">
+        <a class="nav__site--title nav__link {{ firstSegment == "" ? 'nav__link--current' }}" href="{{ siteUrl }}">Eve Jansen</span></a>
+    </div>
+    <div class="col-3 nav__burger--div d-flex justify-content-center align-items-center" onclick="toggleNav()">
+        <div id="nav__burger" class="col-3">
+            <i class="nav__burger-icon fa-solid fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<nav id="nav__main" class="container-fluid d-none d-md-block" role="navigation" aria-label="Main">
+    
+    <div class="spacer m-4 d-md-none"><br></div>
+    <ul class="d-flex nav__ul flex-column flex-md-row justify-content-md-center">
+        <li class="nav__item d-none d-md-block">
+            <a class="nav__site-title nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link {{ firstSegment == "contact" ? "nav__link--current" }}" href="{{ url("contact") }}">Contact</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link {{ firstSegment == "about" ? "nav__link--current" }}" href="{{ url("about") }}">About</a>
+        </li>
+    </ul>
+</nav>

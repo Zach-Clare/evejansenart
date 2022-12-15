@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+/* FontAwesome */
+:root {
+    --fa-style-family: "Font Awesome 6 Pro";
+    --fa-style: 400;
+    --fa-border-color: none;
+    
+}
+
+
+/* Naviation */
+
+nav {
+    a {
+        color: white;
+    }
+    
+    .nav__burger-icon {
+        color: white;
+        --fa-primary-color: white;
+        --fa-style-family: "Font Awesome 6 Pro";
+    }
+}
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__ul {
+    list-style: none;
+}
+
+.nav__mobile-menu {
+    height: 100%;
+    width: 60%; // means the burger button is still clickable
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 5;
+}
