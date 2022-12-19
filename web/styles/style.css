@@ -29,10 +29,14 @@ nav {
 nav a {
   color: white;
 }
+nav #nav__burger {
+  text-align: center;
+}
 nav .nav__burger-icon {
   color: white;
   --fa-primary-color: $primary;
   --fa-style-family: "Font Awesome 6 Pro";
+  transition: all 0.3s ease;
 }
 
 .nav__mobile-bar {
@@ -59,4 +63,12 @@ nav .nav__burger-icon {
   z-index: 5;
   background-color: black;
   font-size: 2.2em;
+}
+
+.nav__link--current {
+  color: black;
+  border: solid 1px white;
+  border-radius: 1000px;
+  background-color: white;
+  padding: 0.3em 1.5em;
 }/*# sourceMappingURL=style.css.map */

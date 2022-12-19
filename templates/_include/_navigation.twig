@@ -4,11 +4,11 @@
 
 <nav class="d-flex justify-content-between d-md-none nav__mobile-bar">
     <div class="col-9 d-flex text-left align-items-center ps-5">
-        <h1><a class="nav__site--title nav__link {{ firstSegment == "" ? 'nav__link--current' }}" href="{{ siteUrl }}">Eve Jansen</span></a></h1>
+        <h1><a class="nav__site--title nav__link" href="{{ siteUrl }}">Eve Jansen</span></a></h1>
     </div>
     <div class="col-3 nav__burger--div d-flex justify-content-center align-items-center" onclick="toggleNav()">
         <div id="nav__burger" class="col-3">
-            <i class="nav__burger-icon fa-solid fa-2xl fa-bars"></i>
+            <i id="nav__burger-icon" class="nav__burger-icon fa-solid fa-2xl fa-bars"></i>
         </div>
     </div>
 </nav>
@@ -21,7 +21,7 @@
             <a class="nav__site-title nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
         </li>
         <li class="nav__item">
-            <a class="nav__link {{ firstSegment == "contact" ? "nav__link--current" }}" href="{{ url("contact") }}">Contact</a>
+            <a class="nav__link nav__link--current {{ firstSegment == "contact" ? "nav__link--current" }}" href="{{ url("contact") }}">Contact</a>
         </li>
         <li class="nav__item">
             <a class="nav__link {{ firstSegment == "about" ? "nav__link--current" }}" href="{{ url("about") }}">About</a>

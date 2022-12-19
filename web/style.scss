@@ -2,6 +2,9 @@
 $primary: white;
 $bg-primary: black;
 
+$button-padding: 0.3em 1.5em;
+$button-radius: 1000px;
+
 body {
     background-color: $bg-primary;
     color: $primary;
@@ -33,12 +36,17 @@ nav {
         color: $primary;
     }
 
+    #nav__burger {
+        text-align: center;
+    }   
     .nav__burger-icon {
         color: $primary;
         --fa-primary-color: $primary;
         --fa-style-family: "Font Awesome 6 Pro";
+        transition: all 0.3s ease;
     }
 }
+
 
 .nav__mobile-bar {
     height: 23vw;
@@ -64,4 +72,12 @@ nav {
     z-index: 5;
     background-color: $bg-primary;
     font-size: 2.2em;
+}
+
+.nav__link--current {
+    color: $bg-primary;
+    border: solid 1px $primary;
+    border-radius: $button-radius;
+    background-color: $primary;
+    padding: $button-padding;
 }
