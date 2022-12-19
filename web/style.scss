@@ -1,43 +1,67 @@
+/* Variables */
+$primary: white;
+$bg-primary: black;
+
 body {
-    background-color: black;
-    color: white;
+    background-color: $bg-primary;
+    color: $primary;
+    font-family: 'Lora', serif;
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.spacer {
+    height: 15%;
 }
 
 /* FontAwesome */
 :root {
     --fa-style-family: "Font Awesome 6 Pro";
     --fa-style: 400;
-    --fa-border-color: none;
-    
+    --fa-border-color: none; 
 }
 
 
 /* Naviation */
 
 nav {
+    position: fixed;
+    z-index: 10;
+
     a {
-        color: white;
+        color: $primary;
     }
-    
+
     .nav__burger-icon {
-        color: white;
-        --fa-primary-color: white;
+        color: $primary;
+        --fa-primary-color: $primary;
         --fa-style-family: "Font Awesome 6 Pro";
     }
 }
+
+.nav__mobile-bar {
+    height: 23vw;
+    width: 100%;
+}
+
 .nav__link {
     text-decoration: none;
 }
 
 .nav__ul {
     list-style: none;
+    height: 37%;
+    padding-left: 0;
 }
 
-.nav__mobile-menu {
+#nav__main {
     height: 100%;
-    width: 60%; // means the burger button is still clickable
+    width: 100%;
     top: 0;
     bottom: 0;
     position: fixed;
     z-index: 5;
+    background-color: $bg-primary;
+    font-size: 2.2em;
 }
