@@ -4,4 +4,19 @@
 Eve Jansen
 {% endblock %}
 
-{% block content %}Test{% endblock %}
+{% block scripts %}
+<script src="js/hide_title.js"></script>
+{% endblock scripts %}
+
+{% block content %}
+<section class="hero d-flex flex-column justify-content-evenly text-center align-items-center pt-5">
+    <h1 id="hero__title" class="hero__title">{{ entry.siteTitle | nl2br }}</h1>
+    <a class="button button--active" href=" {{ url(entry.buttonLink)}} ">{{ entry.buttonText}}</a>
+</section>
+<section class="container-fluid collection">
+    {% for entry in craft.entries.section('piece').orderBy('priority asc').limit(none) %}
+        {% set imageUrl = entry.photo.one().geturl() %}
+        <img class="collection__image" src="{{ imageUrl }}">
+    {% endfor %}
+</section>
+{% endblock %}

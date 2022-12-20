@@ -1,0 +1,14 @@
+columnSuffix: qafvbepo
+contentColumnType: string(255)
+fieldGroup: 5b6560c0-c44b-45ee-b20f-464179aab1fe # Homepage
+handle: buttonLink
+instructions: 'Where does the homepage main button go?'
+name: 'Button Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

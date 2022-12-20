@@ -2,8 +2,14 @@
 $primary: white;
 $bg-primary: black;
 
-$button-padding: 0.3em 1.5em;
+$button-padding: 0.3em 1.2em;
 $button-radius: 1000px;
+
+$navtitle-size: 2.5rem;
+$pagetitle-size: 3.5rem;
+
+
+/* Tags */
 
 body {
     background-color: $bg-primary;
@@ -11,7 +17,7 @@ body {
     font-family: 'Lora', serif;
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: $navtitle-size;
     margin: 0;
 }
 .spacer {
@@ -43,14 +49,17 @@ nav {
         color: $primary;
         --fa-primary-color: $primary;
         --fa-style-family: "Font Awesome 6 Pro";
-        transition: all 0.3s ease;
+        transition: transform .1s;
+    }
+    .rotate {
+        transform:rotate(90deg);
     }
 }
-
 
 .nav__mobile-bar {
     height: 23vw;
     width: 100%;
+    background-color: $bg-primary;
 }
 
 .nav__link {
@@ -72,12 +81,32 @@ nav {
     z-index: 5;
     background-color: $bg-primary;
     font-size: 2.2em;
+    touch-action: none;
 }
 
-.nav__link--current {
+/* Components */
+.button {
+    font-size: 1.75rem;
+}
+.button--active {
     color: $bg-primary;
     border: solid 1px $primary;
     border-radius: $button-radius;
     background-color: $primary;
     padding: $button-padding;
+    text-decoration: none;
+}
+
+/* Homepage */
+
+.hero {
+    height: 60vh;
+}
+h1.hero__title {
+    font-size: $pagetitle-size;
+}
+
+/* Collection */
+.collection__image {
+    width: 100%;
 }

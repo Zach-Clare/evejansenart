@@ -1,4 +1,5 @@
 /* Variables */
+/* Tags */
 body {
   background-color: black;
   color: white;
@@ -36,12 +37,16 @@ nav .nav__burger-icon {
   color: white;
   --fa-primary-color: $primary;
   --fa-style-family: "Font Awesome 6 Pro";
-  transition: all 0.3s ease;
+  transition: transform 0.1s;
+}
+nav .rotate {
+  transform: rotate(90deg);
 }
 
 .nav__mobile-bar {
   height: 23vw;
   width: 100%;
+  background-color: black;
 }
 
 .nav__link {
@@ -63,12 +68,33 @@ nav .nav__burger-icon {
   z-index: 5;
   background-color: black;
   font-size: 2.2em;
+  touch-action: none;
 }
 
-.nav__link--current {
+/* Components */
+.button {
+  font-size: 1.75rem;
+}
+
+.button--active {
   color: black;
   border: solid 1px white;
   border-radius: 1000px;
   background-color: white;
-  padding: 0.3em 1.5em;
+  padding: 0.3em 1.2em;
+  text-decoration: none;
+}
+
+/* Homepage */
+.hero {
+  height: 60vh;
+}
+
+h1.hero__title {
+  font-size: 3.5rem;
+}
+
+/* Collection */
+.collection__image {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,9 @@
 columnSuffix: sgkjuxfs
 contentColumnType: smallint(4)
 fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
-handle: pirority
+handle: priority
 instructions: 'Number from 1 - 1000 dictating in which order the piece should appear'
-name: Pirority
+name: Priority
 searchable: false
 settings:
   decimals: 0

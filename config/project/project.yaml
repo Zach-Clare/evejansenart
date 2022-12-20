@@ -1,4 +1,4 @@
-dateModified: 1670858655
+dateModified: 1671556160
 email:
   fromEmail: zach@helixsoftware.uk
   fromName: evejansenart.com
@@ -8,7 +8,7 @@ fs:
     hasUrls: true
     name: photos
     settings:
-      path: assets/photos
+      path: photos
     type: craft\fs\Local
     url: /photos
 meta:
@@ -19,14 +19,20 @@ meta:
     3e4dd4c5-e025-4f58-b3be-1bc407758ca2: Media # Media
     4aa56010-c8e2-47b7-9305-9261f896e3bb: dev.evejansenart.com # dev.evejansenart.com
     4f5a0094-e716-4456-bd4d-c44226bba9b4: Piece # Piece
+    5b6560c0-c44b-45ee-b20f-464179aab1fe: Homepage # Homepage
     8b80aeea-d283-471c-bca8-5c5665346850: Piece # Piece
-    65f8b98a-d97f-423a-bdf1-1bb2b4f081e7: Pirority # Pirority
+    13b865cf-6d86-407d-9928-a23a48d125d4: 'Button Text' # Button Text
+    23f11d68-7375-461f-bcc9-761f7329ab6e: 'Site Title' # Site Title
+    65f8b98a-d97f-423a-bdf1-1bb2b4f081e7: Priority # Pirority
+    505c6e33-ffb0-45fa-9a9b-ebe6802d7f93: 'Button Link' # Button Link
     661c5cb9-bd8c-4a36-b601-bbe11cae36c4: photos # photos
     840c983d-29fd-46f7-8c77-5f2f194f9b5d: Piece # Piece
+    994e7adf-ea80-48fb-b888-86d26e10a43f: Home # Home
     8488cabf-0a37-42b3-a644-f5437e8c7c21: Default # Default
     41889491-3469-4116-9d5f-11df403d82a9: Photo # Photo
     bf0e7770-eecf-40cd-9fbf-77bd158c1b38: Height # Height
     cc98bc8a-dd0f-4d50-9377-66c1567ae625: Edition # Edition
+    ceeaf068-17f2-45a3-b8c4-39b0ab0e0c7b: Home # Home
     d0b420d5-d44e-4f01-9965-d034498fde0f: evejansenart.com # evejansenart.com
     e273dc2e-a2e3-475d-b8d4-73381c1a4013: Year # Year
 system:

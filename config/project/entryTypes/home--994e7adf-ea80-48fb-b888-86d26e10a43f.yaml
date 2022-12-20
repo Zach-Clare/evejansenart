@@ -1,0 +1,79 @@
+fieldLayouts:
+  6f83dd32-42c8-48f1-969e-625fd888091b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aae57c72-74ae-4b0c-84ff-3073fe027a98
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 23f11d68-7375-461f-bcc9-761f7329ab6e # Site Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd7d3ad2-8a9b-4522-b10b-b97fa2e8a8ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 505c6e33-ffb0-45fa-9a9b-ebe6802d7f93 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a841f05-3aad-4933-a1e6-9bfdfe8fce5f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 13b865cf-6d86-407d-9928-a23a48d125d4 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6535dbd0-4aa3-4887-ad3b-d1dd8bdf74c6
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Hero Section'
+        uid: 8c9d310f-d42e-4121-a281-6ac03d7d5d3a
+        userCondition: null
+handle: home
+hasTitleField: false
+name: Home
+section: ceeaf068-17f2-45a3-b8c4-39b0ab0e0c7b # Home
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

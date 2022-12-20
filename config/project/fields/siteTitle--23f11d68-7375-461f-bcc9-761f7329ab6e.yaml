@@ -1,0 +1,19 @@
+columnSuffix: reciojnd
+contentColumnType: string(80)
+fieldGroup: 5b6560c0-c44b-45ee-b20f-464179aab1fe # Homepage
+handle: siteTitle
+instructions: 'Main text that appears front and centre'
+name: 'Site Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 20
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: 'Eve Jansen'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
