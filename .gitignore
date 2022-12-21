@@ -3,4 +3,5 @@
 /vendor
 .DS_Store
 web/assets
+web/photos
 .vscode/
