@@ -46,11 +46,18 @@ nav .rotate {
 .nav__mobile-bar {
   height: 23vw;
   width: 100%;
+  transition: ease 0.1s;
+}
+
+.nav__mobile-bar--filled {
   background-color: black;
 }
 
 .nav__link {
   text-decoration: none;
+}
+.nav__link:hover {
+  color: white;
 }
 
 .nav__ul {
@@ -84,6 +91,9 @@ nav .rotate {
   padding: 0.3em 1.2em;
   text-decoration: none;
 }
+.button--active:hover {
+  color: black;
+}
 
 /* Homepage */
 .hero {
@@ -92,6 +102,29 @@ nav .rotate {
 
 h1.hero__title {
   font-size: 3.5rem;
+}
+
+/* Filter */
+.filter__box {
+  padding: 0.3em 0.8em;
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 1000px;
+}
+.filter__box .filter__title-field,
+.filter__box .filter__year-field {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.filter__box .filter__title-field:focus-visible,
+.filter__box .filter__year-field:focus-visible {
+  outline: none;
+}
+
+.title-hidden,
+.year-hidden {
+  display: none;
 }
 
 /* Collection */

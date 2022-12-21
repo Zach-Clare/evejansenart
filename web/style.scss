@@ -59,11 +59,18 @@ nav {
 .nav__mobile-bar {
     height: 23vw;
     width: 100%;
+    transition: ease 0.1s;
+}
+.nav__mobile-bar--filled {
     background-color: $bg-primary;
 }
 
 .nav__link {
     text-decoration: none;
+    
+    &:hover {
+        color: $primary
+    }
 }
 
 .nav__ul {
@@ -95,6 +102,10 @@ nav {
     background-color: $primary;
     padding: $button-padding;
     text-decoration: none;
+
+    &:hover {
+        color: $bg-primary;
+    }
 }
 
 /* Homepage */
@@ -104,6 +115,29 @@ nav {
 }
 h1.hero__title {
     font-size: $pagetitle-size;
+}
+
+/* Filter */
+.filter__box {
+    padding: 0.3em 0.8em;
+    background-color: $bg-primary;
+    border: solid 1px $primary;
+    border-radius: $button-radius;
+
+    .filter__title-field,
+    .filter__year-field {
+        background-color: $bg-primary;
+        color: $primary;
+        border: none;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+.title-hidden,
+.year-hidden {
+    display: none;
 }
 
 /* Collection */

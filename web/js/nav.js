@@ -51,11 +51,17 @@ window.addEventListener("scroll", function() {
 function hideTitle() {
     var siteTitle = document.getElementById("nav__site-title");
     siteTitle.classList.add("d-none");
+
+    // remove filled in class
+    document.getElementById("nav__mobile-bar").classList.remove("nav__mobile-bar--filled");
 }
 
 function showTitle() {
     var siteTitle = document.getElementById("nav__site-title");
     siteTitle.classList.remove("d-none");
+
+    // add filled in class
+    document.getElementById("nav__mobile-bar").classList.add("nav__mobile-bar--filled");
 }
 
 function heroVisible(targetElement) {
