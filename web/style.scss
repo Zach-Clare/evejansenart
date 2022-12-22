@@ -8,6 +8,8 @@ $button-radius: 1000px;
 $navtitle-size: 2.5rem;
 $pagetitle-size: 3.5rem;
 
+$md: 768px;
+
 
 /* Tags */
 
@@ -65,6 +67,9 @@ nav {
     background-color: $bg-primary;
 }
 
+#nav__site-title--mobile {
+    opacity: 0;
+}
 .nav__link {
     text-decoration: none;
     
@@ -78,6 +83,9 @@ nav {
     height: 37%;
     padding-left: 0;
 }
+.nav__other-pages {
+    height: 75%;
+}
 
 #nav__main {
     height: 100%;
@@ -89,6 +97,23 @@ nav {
     background-color: $bg-primary;
     font-size: 2.2em;
     touch-action: none;
+}
+@media (min-width: $md) {
+    #nav__site-title {
+        font-size: 1.5em;
+        opacity: 0;
+    }
+
+    .nav__link {
+        font-size: 0.7em;
+    }
+
+    #nav__main {
+        top: auto;
+        bottom: auto;
+        height: auto;
+        box-shadow: 0px 1px 12px $bg-primary;
+    }
 }
 
 /* Components */
@@ -115,6 +140,11 @@ nav {
 }
 h1.hero__title {
     font-size: $pagetitle-size;
+}
+@media (min-width: $md) {
+    h1.hero__title {
+        font-size: 5em;
+    }
 }
 
 /* Filter */

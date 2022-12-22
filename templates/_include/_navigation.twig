@@ -4,7 +4,7 @@
 
 <nav id="nav__mobile-bar" class="d-flex justify-content-between d-md-none nav__mobile-bar">
     <div class="col-9 d-flex text-left align-items-center ps-5">
-        <h1><a id="nav__site-title" class="nav__site-title d-none nav__link" href="{{ siteUrl }}">Eve Jansen</span></a></h1>
+        <h1><a id="nav__site-title--mobile" class="nav__site-title nav__link" href="{{ siteUrl }}">Eve Jansen</span></a></h1>
     </div>
     <div class="col-3 nav__burger--div d-flex justify-content-center align-items-center" onclick="toggleNav()">
         <div id="nav__burger" class="col-3">
@@ -16,18 +16,20 @@
 <nav id="nav__main" class="d-flex flex-column d-none d-md-block" role="navigation" aria-label="Main">
     
     <div class="spacer m-4 d-md-none"><br></div>
-    <ul class="d-flex nav__ul flex-column justify-content-around text-center flex-md-row justify-content-md-center mt-5 mt-md-0">
-        <li class="nav__item d-none d-md-block">
-            <a class="nav__site-title nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
+    <ul class="nav__ul d-flex flex-column justify-content-around align-items-md-center text-center flex-md-row mt-5 mt-md-0 mb-md-2">
+        <li class="nav__item col-md-7 text-md-start ps-md-5">
+            <a id="nav__site-title" class="nav__site-title d-none d-md-block nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
         </li>
-        <li class="nav__item">
-            <a class="nav__link button--active {{ firstSegment == "contact" ? "button--active" }}" href="{{ url("contact") }}">Contact</a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link {{ firstSegment == "about" ? "button--active" }}" href="{{ url("about") }}">About</a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="https://www.instagram.com/evejansenart/"><i class="fa-brands fa-instagram"></i></a>
-        </li>
+        <div class="nav__other-pages col-md-3 d-flex flex-column flex-md-row justify-content-between align-items-center"
+            <li class="nav__item d-md-flex align-items-md-center">
+                <a class="nav__link {{ firstSegment == "contact" ? "button--active" }}" href="{{ url("contact") }}">Contact</a>
+            </li>
+            <li class="nav__item d-md-flex align-items-md-center">
+                <a class="nav__link {{ firstSegment == "about" ? "button--active" }}" href="{{ url("about") }}">About</a>
+            </li>
+            <li class="nav__item d-md-flex align-items-md-center">
+                <a class="nav__link" href="https://www.instagram.com/evejansenart/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </div>
     </ul>
 </nav>
