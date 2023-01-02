@@ -71,7 +71,7 @@ nav .rotate {
 }
 
 .nav__other-pages {
-  height: 75%;
+  height: 50%;
 }
 
 #nav__main {
@@ -156,6 +156,37 @@ h1.hero__title {
 }
 
 /* Collection */
+#collection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.collection__piece {
+  position: relative;
+  text-align: center;
+}
+
+.collection__title {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .collection__title {
+    display: none;
+  }
+  .collection__piece:hover .collection__title {
+    display: inline-block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
 .collection__image {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */

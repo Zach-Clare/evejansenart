@@ -10,12 +10,15 @@ Eve Jansen
 
 {% set years = craft.entries.limit(null)|group('year|datetime("Y")') %}
 
+{% set email = "evejansenart@mail.com" %}
+
 
 {% block content %}
 <section class="hero d-flex flex-column justify-content-evenly text-center align-items-center pt-5">
     <h1 id="hero__title--mobile" class="hero__title d-md-none">{{ entry.siteTitle | nl2br }}</h1>
     <h1 id="hero__title" class="hero__title d-none d-md-block">{{ entry.siteTitle }}</h1>
-    <a class="button button--active d-md-none" href=" {{ url(entry.buttonLink)}} ">{{ entry.buttonText}}</a>
+    <a class="button button--active d-md-none" href="mailto:{{email}} ">{{ entry.buttonText}}</a>
+    {# <a class="button button--active d-md-none" href="{{ url(entry.buttonLink)}} ">{{ entry.buttonText}}</a> #}
 </section>
 <section class="filter container-fluid d-flex justify-content-center mt-5 mb-3 px-5">
     <div class="filter__box d-flex align-items-center">
@@ -27,14 +30,33 @@ Eve Jansen
         </select>
     </div>
 </section>
-<section class="container-fluid collection">
-    {% for entry in craft.entries.section('piece').orderBy('priority asc').limit(none) %}
+
+{% set pieces = craft.entries.section('piece').orderBy('priority asc').limit(none) %}
+{% set rows = (pieces|length / 3)|round(0, 'ceil') %} {# 3 is number of columns #}
+<section id="collection" class="collection">
+    {% for entry in pieces %}
+        {% if loop.index0 % rows == 0 %}
+        </div>
+        {% endif %}
+
+        {% if (loop.index0 == 0 or loop.index0 % rows == 0) %}
+        <div id="" class="col-12 col-md-4">
+        {% endif %}
+            {% set imageUrl = entry.photo.one().geturl() %}
+            <div class="collection__piece p-3 p-md-0 m-0 m-md-3" data-name="{{ entry.title | replace({' ':''}) | lower }}" data-year="{{ entry.year | datetime("Y") }}">
+                <div class="py-2">
+                    <img class="collection__image" src="{{ imageUrl }}">
+                    <div class="collection__title p-3">{{entry.title}}</div>
+                </div>
+            </div>
+    {% endfor %}
+    {# {% for entry in craft.entries.section('piece').orderBy('priority asc').limit(none) %}
         {% set imageUrl = entry.photo.one().geturl() %}
-        <div class="collection__piece p-3" data-name="{{ entry.title | replace({' ':''}) | lower }}" data-year="{{ entry.year | datetime("Y") }}">
+        <div class="collection__piece p-3 col-12 col-md-4" data-name="{{ entry.title | replace({' ':''}) | lower }}" data-year="{{ entry.year | datetime("Y") }}">
             <a class="py-2" href="{{ entry.url }}">
                 <img class="collection__image" src="{{ imageUrl }}">
             </a>
         </div>
-    {% endfor %}
+    {% endfor %} #}
 </section>
 {% endblock %}
