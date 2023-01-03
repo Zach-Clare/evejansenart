@@ -1,0 +1,45 @@
+columnSuffix: xdsylgis
+contentColumnType: string
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: area
+instructions: null
+name: Area
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Middle
+        -
+          - value
+          - middle
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Right
+        -
+          - value
+          - right
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

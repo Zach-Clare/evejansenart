@@ -1,4 +1,4 @@
-dateModified: 1672233607
+dateModified: 1672764581
 email:
   fromEmail: zach@helixsoftware.uk
   fromName: evejansenart.com
@@ -32,6 +32,7 @@ meta:
     bf0e7770-eecf-40cd-9fbf-77bd158c1b38: Height # Height
     cc98bc8a-dd0f-4d50-9377-66c1567ae625: Edition # Edition
     ceeaf068-17f2-45a3-b8c4-39b0ab0e0c7b: Home # Home
+    cf1de567-c2e5-4bdd-967a-cb3450ad274e: Area # Column
     d0b420d5-d44e-4f01-9965-d034498fde0f: evejansenart.com # evejansenart.com
     e273dc2e-a2e3-475d-b8d4-73381c1a4013: Year # Year
 system:

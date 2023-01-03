@@ -2,7 +2,7 @@ columnSuffix: sgkjuxfs
 contentColumnType: smallint(4)
 fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
 handle: priority
-instructions: 'Number from 1 - 1000 dictating in which order the piece should appear'
+instructions: 'Number from 1 - 1000 dictating in which row the piece should appear (in its column)'
 name: Priority
 searchable: false
 settings:

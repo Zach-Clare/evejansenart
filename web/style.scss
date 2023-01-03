@@ -86,7 +86,7 @@ nav {
     padding-left: 0;
 }
 .nav__other-pages {
-    height: 50%;
+    height: 65%;
 }
 
 #nav__main {
@@ -150,6 +150,13 @@ h1.hero__title {
 }
 
 /* Filter */
+@media (min-width: $md) {
+    .filter {
+        position: sticky;
+        top: 1.5rem;
+        z-index: 6;
+    }
+}
 .filter__box {
     padding: 0.3em 0.8em;
     background-color: $bg-primary;
