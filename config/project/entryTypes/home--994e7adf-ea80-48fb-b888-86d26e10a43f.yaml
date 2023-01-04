@@ -66,6 +66,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 5cd4c992-c495-4a14-8502-7a7552e5ab4b # Background Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22e42232-d281-4ef0-9539-29be2dc55845
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Hero Section'
         uid: 8c9d310f-d42e-4121-a281-6ac03d7d5d3a
         userCondition: null

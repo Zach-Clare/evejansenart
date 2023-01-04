@@ -12,14 +12,15 @@ Eve Jansen
 {% set email = "evejansenart@mail.com" %}
 
 
+
 {% block content %}
-<section class="hero d-flex flex-column justify-content-evenly text-center align-items-center pt-5">
+<section class="hero d-flex flex-column justify-content-evenly text-center align-items-center pt-5" style="background-image: url({{ entry.backgroundImage.one().getUrl() }})">
     <h1 id="hero__title--mobile" class="hero__title d-md-none">{{ entry.siteTitle | nl2br }}</h1>
     <h1 id="hero__title" class="hero__title d-none d-md-block">{{ entry.siteTitle }}</h1>
     <a class="button button--active d-md-none" href="mailto:{{email}}?subject=Enquiry">{{ entry.buttonText}}</a>
     {# <a class="button button--active d-md-none" href="{{ url(entry.buttonLink)}} ">{{ entry.buttonText}}</a> #}
 </section>
-<section class="filter container-fluid d-flex justify-content-center mt-5 mb-3 px-5">
+<section id="filter" class="filter container-fluid d-flex justify-content-center pt-4 mb-3 px-5">
     <div class="filter__box d-flex align-items-center">
         <i class="fa-solid fa-magnifying-glass col-1"></i>
         <input id="filter__title-field" class="filter__title-field col-7" type="text" placeholder="Search">

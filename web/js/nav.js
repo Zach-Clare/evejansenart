@@ -62,6 +62,9 @@ function hideTitle() {
 
     // remove filled in class
     document.getElementById("nav__mobile-bar").classList.remove("nav__mobile-bar--filled");
+    document.getElementById("nav__main").classList.remove("nav__main--scrolled");
+
+    document.getElementById("filter").classList.add("pt-4");
 }
 
 function showTitle() {
@@ -70,6 +73,9 @@ function showTitle() {
 
     // add filled in class
     document.getElementById("nav__mobile-bar").classList.add("nav__mobile-bar--filled");
+    document.getElementById("nav__main").classList.add("nav__main--scrolled");
+
+    document.getElementById("filter").classList.remove("pt-4");
 }
 
 function visible(targetElement) {

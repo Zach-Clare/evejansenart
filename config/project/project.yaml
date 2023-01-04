@@ -1,4 +1,4 @@
-dateModified: 1672764581
+dateModified: 1672850180
 email:
   fromEmail: zach@helixsoftware.uk
   fromName: evejansenart.com
@@ -20,6 +20,7 @@ meta:
     4aa56010-c8e2-47b7-9305-9261f896e3bb: dev.evejansenart.com # dev.evejansenart.com
     4f5a0094-e716-4456-bd4d-c44226bba9b4: Piece # Piece
     5b6560c0-c44b-45ee-b20f-464179aab1fe: Homepage # Homepage
+    5cd4c992-c495-4a14-8502-7a7552e5ab4b: 'Background Image' # Background Image
     8b80aeea-d283-471c-bca8-5c5665346850: Piece # Piece
     13b865cf-6d86-407d-9928-a23a48d125d4: 'Button Text' # Button Text
     23f11d68-7375-461f-bcc9-761f7329ab6e: 'Site Title' # Site Title
@@ -32,7 +33,7 @@ meta:
     bf0e7770-eecf-40cd-9fbf-77bd158c1b38: Height # Height
     cc98bc8a-dd0f-4d50-9377-66c1567ae625: Edition # Edition
     ceeaf068-17f2-45a3-b8c4-39b0ab0e0c7b: Home # Home
-    cf1de567-c2e5-4bdd-967a-cb3450ad274e: Area # Column
+    cf1de567-c2e5-4bdd-967a-cb3450ad274e: Area # Area
     d0b420d5-d44e-4f01-9965-d034498fde0f: evejansenart.com # evejansenart.com
     e273dc2e-a2e3-475d-b8d4-73381c1a4013: Year # Year
 system:
