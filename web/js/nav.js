@@ -1,5 +1,10 @@
 function toggleNav() {
 
+    let front = false;
+    if (window.location.pathname == "/") {
+        front = true;
+    }
+
     var hidden;
     if (document.getElementById("nav__main").classList.contains("d-none")) {
         // currently hidden
@@ -25,11 +30,11 @@ function toggleNav() {
     }
 
     if (hidden) { // menu is going to be shown
-        showTitle();
+        showTitle(front);
     } else if (!hidden && !hero) {
-        hideTitle();
+        hideTitle(front);
     } else if (!hidden && hero) {
-        showTitle();
+        showTitle(front);
     }
 
     // toggle icon between bars and X
@@ -39,6 +44,12 @@ function toggleNav() {
 }
 
 window.addEventListener("scroll", function() {
+
+    let front = false;
+    if (window.location.pathname == "/") {
+        front = true;
+    }
+
     try {
         var title = document.getElementById("hero__title--mobile");
         var titleStyles = this.getComputedStyle(title);
@@ -50,18 +61,24 @@ window.addEventListener("scroll", function() {
     }
     
     if (visible(title)) {
-        showTitle();
+        showTitle(front);
     } else {
-        hideTitle();
+        hideTitle(front);
     }
 });
 
-function hideTitle() {
-    document.getElementById("nav__site-title--mobile").style.opacity = 0;
-    document.getElementById("nav__site-title").style.opacity = 0;
+function hideTitle(front) {
 
+    if (front) {
+        // document.getElementById("nav__site-title--mobile").style.opacity = 0;
+        document.getElementById("nav__site-title--mobile").classList.add("nav__site-title--mobile-hidden");
+        document.getElementById("nav__site-title").style.opacity = 0;
+
+        // remove filled in class for mobile
+        document.getElementById("nav__mobile-bar").classList.remove("nav__mobile-bar--filled");
+    }
+    
     // remove filled in class
-    document.getElementById("nav__mobile-bar").classList.remove("nav__mobile-bar--filled");
     document.getElementById("nav__main").classList.remove("nav__main--scrolled");
 
     try {
@@ -73,8 +90,12 @@ function hideTitle() {
 }
 
 function showTitle() {
-    document.getElementById("nav__site-title--mobile").style.opacity = 1;
+
+    
+    // document.getElementById("nav__site-title--mobile").style.opacity = 1;
+    document.getElementById("nav__site-title--mobile").classList.remove("nav__site-title--mobile-hidden");
     document.getElementById("nav__site-title").style.opacity = 1;
+    
 
     // add filled in class
     document.getElementById("nav__mobile-bar").classList.add("nav__mobile-bar--filled");

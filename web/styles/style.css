@@ -11,6 +11,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
 .spacer {
   height: 15%;
 }
@@ -44,16 +53,17 @@ nav .rotate {
 }
 
 .nav__mobile-bar {
-  height: 23vw;
+  height: 10vh;
   width: 100%;
   transition: ease 0.1s;
 }
 
 .nav__mobile-bar--filled {
   background-color: black;
+  border-bottom: 1px #222 solid;
 }
 
-#nav__site-title--mobile {
+.nav__site-title--mobile-hidden {
   opacity: 0;
 }
 
@@ -112,9 +122,12 @@ nav .rotate {
 .button {
   font-size: 1.75rem;
   z-index: 2;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
-.button--active {
+.button--primary {
   color: black;
   border: solid 1px white;
   border-radius: 1000px;
@@ -122,8 +135,38 @@ nav .rotate {
   padding: 0.3em 1.2em;
   text-decoration: none;
 }
-.button--active:hover {
+.button--primary:hover {
   color: black;
+}
+
+.button--secondary {
+  color: white;
+  border: solid 1px white;
+  border-radius: 1000px;
+  background-color: black;
+  padding: 0.3em 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.button--secondary:hover {
+  color: white;
+}
+
+.button--premium {
+  color: black;
+  border: solid 1px rgb(207, 184, 81);
+  border-radius: 1000px;
+  background-color: rgb(207, 184, 81);
+  padding: 0.3em 30vw;
+  text-decoration: none;
+}
+.button--premium:hover {
+  color: black;
+}
+
+#hero__button {
+  display: inline;
+  width: auto;
 }
 
 /* Homepage */
@@ -228,4 +271,41 @@ h1.hero__title {
 }
 .collection__image {
   width: 100%;
+}
+
+/* Entry Page */
+.entry {
+  padding-top: 11vh;
+}
+
+.entry__photo {
+  max-height: 34vh;
+  max-width: 100%;
+}
+
+.entry__details {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .entry__details {
+    width: 80%;
+  }
+}
+.entry__info-point {
+  padding: 2px 0;
+}
+
+.entry__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.entry__actions {
+  position: absolute;
+  bottom: 1em;
+}
+
+.entry__actions .row {
+  --bs-gutter-y: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

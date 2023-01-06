@@ -8,7 +8,51 @@ Eve Jansen - {{ entry.title }}
 {% endblock scripts %}
 
 {% set email = "evejansenart@mail.com" %}
+{% set params = craft.entries.section('piece').orderBy('priority asc').limit(none) %}
 
 {% block content %}
+<div class="entry container-fluid">
+    <div class="col-12 col-md-6 text-center">
+        {# <div class="entry__photo-container" style="background-image: url( {{ entry.photo.one().getUrl() }} )">
 
+        </div> #}
+        <img src="{{ entry.photo.one().getUrl() }}" class="entry__photo">
+    </div>
+    <div class="entry__info col-12 col-md-6 text-center d-flex flex-column justify-content-between align-items-center mt-5">
+        <h2>{{ entry.title }}</h2>
+        <h3>{{ entry.media }}</h3>
+        <div class="entry__details row mt-5">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <span class="entry__price">{{ entry.price|money | replace({".00":""}) }}</span>
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                <span class="entry__year entry__info-point"><i class="fa-solid fa-calendar me-2"></i> {{ entry.year | datetime("Y")  }}</span>
+                <span class="entry__dimensions entry__info-point"><i class="fa-solid fa-expand me-2"></i> {{ entry.width}}cm x {{entry.height}}cm</span>
+                <span class="entry__edition entry__info-point"><i class="fa-solid fa-fingerprint me-2"></i> Edition of {{ entry.edition}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% set nextEntry = entry.getNext(params) %}
+{% set prevEntry = entry.getPrev(params) %}
+
+<section class="entry__actions container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <a href="mailto:{{email}}?subject={{entry.title}}" class="button button--premium">Enquire</a>
+        </div>
+        {% if (prevEntry) %}
+        <div class="{{ nextEntry ? "col-6" : "col-12" }}">
+            <a href="{{ entry.getPrev(params).url }}" class="button button--secondary">Previous</a>
+        </div>
+        {% endif %}
+        {% if (nextEntry) %}
+        <div class="{{ prevEntry ? "col-6" : "col-12" }}">
+            <a href="{{ entry.getNext(params).url }}"  class="button button--secondary">Next</a>
+        </div>
+        {% endif %}
+    </div>
+    
+</section>
 {% endblock %}
