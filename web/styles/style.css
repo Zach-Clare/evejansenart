@@ -109,6 +109,7 @@ nav .rotate {
 /* Components */
 .button {
   font-size: 1.75rem;
+  z-index: 2;
 }
 
 .button--active {
@@ -153,6 +154,8 @@ h1.hero__title {
 /* Filter */
 .filter {
   box-shadow: 0px -10px 52px black;
+  z-index: 2;
+  position: relative;
 }
 
 @media (min-width: 768px) {
