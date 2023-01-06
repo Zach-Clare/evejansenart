@@ -92,6 +92,8 @@ nav .rotate {
 @media (min-width: 768px) {
   #nav__site-title {
     font-size: 1.5em;
+  }
+  .nav__site-title--hidden {
     opacity: 0;
   }
   .nav__link {
@@ -190,6 +192,10 @@ h1.hero__title {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+}
+
+.collection__link {
+  display: block;
 }
 
 .collection__piece {

@@ -64,7 +64,12 @@ function hideTitle() {
     document.getElementById("nav__mobile-bar").classList.remove("nav__mobile-bar--filled");
     document.getElementById("nav__main").classList.remove("nav__main--scrolled");
 
-    document.getElementById("filter").classList.add("pt-4");
+    try {
+        document.getElementById("filter").classList.add("pt-4");
+    } catch {
+
+    }
+    
 }
 
 function showTitle() {
@@ -75,7 +80,11 @@ function showTitle() {
     document.getElementById("nav__mobile-bar").classList.add("nav__mobile-bar--filled");
     document.getElementById("nav__main").classList.add("nav__main--scrolled");
 
-    document.getElementById("filter").classList.remove("pt-4");
+    try {
+        document.getElementById("filter").classList.remove("pt-4");
+    } catch {
+        
+    }
 }
 
 function visible(targetElement) {

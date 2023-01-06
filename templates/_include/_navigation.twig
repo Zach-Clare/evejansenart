@@ -1,4 +1,11 @@
+{% if not craft.app.request.segments|length %}
+    {% set front = true %}
+{% else %}
+    {% set front = false %}
+{% endif %}
+
 <script src="/js/nav.js"></script>
+
 
 {% set firstSegment = craft.app.request.getSegment(1) %}
 {% set email = "evejansenart@mail.com" %}
@@ -19,7 +26,7 @@
     <div class="spacer m-4 d-md-none"><br></div>
     <ul class="nav__ul d-flex flex-column justify-content-around align-items-md-center text-center flex-md-row mt-5 mt-md-0 mb-md-2">
         <li class="nav__item col-md-7 text-md-start ps-md-5">
-            <a id="nav__site-title" class="nav__site-title d-none d-md-block nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
+            <a id="nav__site-title" class="nav__site-title {{ front ? "d-none nav__site-title--hidden" : "" }} d-md-block nav__link" href="{{ siteUrl }}">Eve Jansen</span></a>
         </li>
         <div class="nav__other-pages {# col-md-3 #} col-md-2 d-flex flex-column flex-md-row justify-content-around align-items-center">
             <li class="nav__item d-md-flex align-items-md-center">
