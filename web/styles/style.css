@@ -164,6 +164,15 @@ nav .rotate {
   color: black;
 }
 
+@media (min-width: 992px) {
+  .button {
+    font-size: 1.3rem;
+  }
+  .button--premium {
+    padding: 0.3em 1.2em;
+    font-size: 1.3rem;
+  }
+}
 #hero__button {
   display: inline;
   width: auto;
@@ -308,4 +317,52 @@ h1.hero__title {
 
 .entry__actions .row {
   --bs-gutter-y: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .entry {
+    height: 89vh;
+  }
+  .entry__frame {
+    width: 95%;
+  }
+  .entry__title {
+    font-size: 3.5rem;
+  }
+  .entry__media {
+    font-size: 1.5rem;
+  }
+  .entry__actions {
+    position: initial;
+    bottom: auto;
+  }
+  .entry__actions--desktop {
+    width: 75%;
+  }
+  .entry__photo {
+    max-height: 72vh;
+  }
+  .entry__details {
+    width: 90%;
+  }
+  .entry__info {
+    height: 48vh;
+    position: absolute;
+    width: 49vw;
+    top: 20vh;
+  }
+  .entry__info-point {
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .entry__details {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .entry__details {
+    width: 60%;
+  }
 }/*# sourceMappingURL=style.css.map */

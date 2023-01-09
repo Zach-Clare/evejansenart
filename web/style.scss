@@ -20,7 +20,10 @@ $h2-size: 1.5rem;
 $h3-size: 1.1rem;
 
 $button-size: 1.75rem;
+$button-size-desktop: 1.3rem;
 
+$xl: 1200px;
+$lg: 992px;
 $md: 768px;
 $sm: 576px;
 
@@ -192,6 +195,15 @@ nav {
         color: $bg-primary;
     }
 }
+@media (min-width: $lg) {
+    .button {
+        font-size: $button-size-desktop;
+    }
+    .button--premium {
+        padding: $button-padding;
+        font-size: 1.3rem;
+    }
+}
 #hero__button {
     display: inline;
     width: auto;
@@ -331,4 +343,52 @@ h1.hero__title {
 }
 .entry__actions .row {
     --bs-gutter-y: 1.5rem;
+}
+@media (min-width: $lg) {
+    .entry {
+        height: 89vh;
+    }
+    .entry__frame {
+        width: 95%;
+    }
+    .entry__title {
+        font-size: $pagetitle-size;
+    }
+    .entry__media {
+        font-size: $h2-size;
+    }
+    .entry__actions {
+        position: initial;
+        bottom: auto;
+    }
+    .entry__actions--desktop {
+        width: 75%;
+    }
+
+    .entry__photo {
+        max-height: 72vh;
+    }
+    .entry__details {
+        width: 90%;
+    }
+    .entry__info {
+        height: 48vh;
+        position: absolute;
+        width: 49vw;
+        top: 20vh;
+    }
+    .entry__info-point {
+        text-align: left;
+        width: 100%;
+    }
+}
+@media (min-width: $lg) {
+    .entry__details {
+        width: 75%;
+    }
+}
+@media (min-width: $xl) {
+    .entry__details {
+        width: 60%;
+    }
 }
