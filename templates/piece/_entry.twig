@@ -36,7 +36,6 @@ Eve Jansen - {{ entry.title }}
                     </div>
                 </div>
 
-
                 {% set nextEntry = entry.getNext(params) %}
                 {% set prevEntry = entry.getPrev(params) %}
 
@@ -64,7 +63,11 @@ Eve Jansen - {{ entry.title }}
                             <a href="{{ entry.getPrev(params).url }}" class="button button--secondary">Previous</a>
                         </div>
                         {% endif %}
-                        {% if (not prevEntry) %}
+                        {% if (not prevEntry and not nextEntry) %}
+                            <div class="col-12">
+                                <a href="mailto:{{email}}?subject={{entry.title}}" class="button button--premium">Enquire</a>
+                            </div>
+                        {% elseif (not prevEntry) %}
                             <div class="col-9">
                                 <a href="mailto:{{email}}?subject={{entry.title}}" class="button button--premium">Enquire</a>
                             </div>
