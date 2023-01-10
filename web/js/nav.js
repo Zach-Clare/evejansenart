@@ -1,3 +1,32 @@
+let titleVisibilityController = [];
+
+window.onload = (e) => {
+}
+
+function evaluateTitleVisibility() {
+    console.log("changed");
+    console.log(titleVisibilityController);
+}
+
+
+// Enacts changes on the titleVisibilityController array.
+/*
+Additions to the array can only be made if the value does not already exist.
+Removals from the array can only be made if the value exists in the array (obviously).
+This function essentially implements a singleton pattern within the array, similar to the way dictionary keys are singletons.
+A dictionary wasn't used here because...it wasn't. :)
+*/
+function adjustSingletonArray(key, array, add) {
+    const index = array.indexOf(key);
+    if (index < 0 && add) { // add key if it doesn't exist already
+        array.push(key);
+    } else if (index > -1 && !add) { // remove key if it exists and the function has been told to
+        array.splice(index, 1);
+    }
+
+    evaluateTitleVisibility();
+}
+
 function toggleNav() {
 
     let front = false;
@@ -62,8 +91,10 @@ window.addEventListener("scroll", function() {
     
     if (visible(title)) {
         showTitle(front);
+        enact("scroll", titleVisibilityController, true);
     } else {
         hideTitle(front);
+        enact("scroll", titleVisibilityController, false);
     }
 });
 
@@ -90,7 +121,6 @@ function hideTitle(front) {
 }
 
 function showTitle() {
-
     
     // document.getElementById("nav__site-title--mobile").style.opacity = 1;
     document.getElementById("nav__site-title--mobile").classList.remove("nav__site-title--mobile-hidden");
