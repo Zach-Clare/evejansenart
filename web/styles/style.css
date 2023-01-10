@@ -251,6 +251,7 @@ h1.hero__title {
 
 .collection__link {
   display: block;
+  text-decoration: none;
 }
 
 .collection__piece {
