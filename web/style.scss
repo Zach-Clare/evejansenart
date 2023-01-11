@@ -89,10 +89,6 @@ nav {
     width: 100%;
     transition: ease 0.1s;
 }
-.nav__mobile-bar--filled {
-    background-color: $bg-primary;
-    border-bottom: 1px $bg-accent solid;
-}
 
 .nav__site-title--mobile-hidden {
     opacity: 0;
@@ -103,6 +99,16 @@ nav {
     &:hover {
         color: $primary
     }
+}
+
+.nav__main--filled,
+.nav__mobile-bar--filled {
+    background-color: $bg-primary;
+    border-bottom: 1px $bg-accent solid;
+}
+.nav__site-title--hidden,
+.nav__site-title--mobile-hidden {
+    display: none;
 }
 
 .nav__ul {
@@ -241,7 +247,7 @@ h1.hero__title {
     z-index: 2;
     position: relative;
 }
-@media (min-width: $md) {
+@media (min-width: $xl) {
     .filter {
         position: sticky;
         top: 1.5rem;

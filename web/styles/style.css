@@ -58,11 +58,6 @@ nav .rotate {
   transition: ease 0.1s;
 }
 
-.nav__mobile-bar--filled {
-  background-color: black;
-  border-bottom: 1px #222 solid;
-}
-
 .nav__site-title--mobile-hidden {
   opacity: 0;
 }
@@ -72,6 +67,17 @@ nav .rotate {
 }
 .nav__link:hover {
   color: white;
+}
+
+.nav__main--filled,
+.nav__mobile-bar--filled {
+  background-color: black;
+  border-bottom: 1px #222 solid;
+}
+
+.nav__site-title--hidden,
+.nav__site-title--mobile-hidden {
+  display: none;
 }
 
 .nav__ul {
@@ -212,7 +218,7 @@ h1.hero__title {
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .filter {
     position: -webkit-sticky;
     position: sticky;
