@@ -5,6 +5,23 @@ Eve Jansen - {{ entry.title }}
 {% endblock %}
 
 {% block scripts %}
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org/",
+    "@type": "Product",
+    "name": "{{ entry.title }}",
+    "description": "{{ entry.media }}",
+    "image": "{{ entry.photo.one().getUrl() }}",
+    "@size": "{{ entry.width}}cm x {{entry.height}}cm",
+    "offers": {
+        "@type": "Offer",
+        "url": "{{ entry.url }}",
+        "priceCurrency": "GBP",
+        "price": "{{ entry.price | money | replace({"£" : ""}) }}",
+        "availability": "https://schema.org/InStock"
+    }
+}
+</script>
 {% endblock scripts %}
 
 {% set email = "evejansenart@mail.com" %}
