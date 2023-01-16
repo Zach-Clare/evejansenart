@@ -1,0 +1,14 @@
+columnSuffix: crnuhppa
+contentColumnType: boolean
+fieldGroup: 4f5a0094-e716-4456-bd4d-c44226bba9b4 # Piece
+handle: dummy
+instructions: 'Is the information in this entry dummy data?'
+name: 'Dummy?'
+searchable: false
+settings:
+  default: false
+  offLabel: Dummy
+  onLabel: Accurate
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
