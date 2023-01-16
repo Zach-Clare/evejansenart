@@ -25,7 +25,7 @@ Eve Jansen - {{ entry.title }}
 {% endblock scripts %}
 
 {% set email = "evejansenart@mail.com" %}
-{% set params = craft.entries.section('piece').orderBy('priority asc').limit(none) %}
+{% set params = craft.entries.section('piece').orderBy('priority asc, area desc').limit(null) %}
 
 {% block content %}
 <div class="entry container-fluid d-flex justify-content-center align-items-center">
